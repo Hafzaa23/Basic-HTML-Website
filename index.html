@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple HTML-only website">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A simple HTML-only website for roadmap.sh frontend" />
+    <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh" />
+    <meta name="author" content="Hafsa" />
+    <title>Basic HTML Website</title>
+    <style>
+        *{
+        
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    body{
+      font-family:Arial, sans-serif;
+      border:2px solid black;
+      
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+         border-top: 2px solid black;
+        
+       
+    }
+    .logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.square{
+    width:35px;
+    height:35px;
+    background:black;
+    border-radius:8px;
+}
+
+.logo h2{
+    font-size:38px;
+    font-weight:400;
+    margin:0;
+}
+    .nav-links{
+       display: flex; 
+       gap: 20px;
+      
+
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+
+    /*--hero*/
+    .hero{
+        text-align: center;
+        padding: 25px 20px;
+        border-bottom: 2px solid black;
+        font-style: italic;
+    }
+    .hero h1{
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-family: cursive;
+    }
+    .hero p{
+        color:gray;
+        font-size: 15px;
+    }
+    /*section*/
+    .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    border-bottom: 2px solid black;
+}
+    .box{
+        border-radius: 2px solid black;
+        padding: 20px;
+        min-height: 400px;
+    }
+    
+    .box:last-child{
+        border-right: none;
+    }
+    .box{
+        margin-bottom: 20px;
+        font-family: cursive;
+        border-right: 2px solid black;
+        text-align: start;
+    }
+    /*project*/
+
+    .project-item{
+        padding: 15px 0;
+        border-bottom: 2px solid black;
+        font-size: 22px;
+    }
+    /*work exprience*/
+    .work{
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        border-top: 2px solid black;
+        
+    }
+    .work h3{
+        margin-bottom: 10px;
+        font-family: cursive;
+    }
+    .work p{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .work a{
+        color:blue;
+        text-decoration: none;
+       
+        
+    }
+    .box-education{
+        font-family: cursive;
+        padding: 10px;
+        margin: 20px;
+    }
+    /*education*/
+    .education p{
+        margin-bottom: 20px;
+        font-size: 20px;
+
+    }
+    .education ul{
+        margin: 20px;
+        font-size: 20px;
+        
+        
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px){
+
+      .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+      .box{
+        border-right:none;
+        border-bottom:2px solid black;
+      }
+
+      .navbar{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      .hero h1{
+        font-size:40px;
+      }
+
+    }
+     @media(max-width:900px){
+    .container2{
+        display: flex;
+        flex-direction: row;
+    }
+
+       
+
+    .qoral{
+        font-family: cursive;
+        font-style: italic;
+        margin-left: 20px;
+        font-size:large;
+        font-weight:550;
+        
+    }
+
+    .review{
+       display: flex;
+        flex-direction: row;
+        gap: 10px;
+        text-align: justify;
+        font-size: small;
+        
+         
+    }
+}
+
+    .shape{
+        color:rgb(185, 183, 183);
+    }
+    .text{
+        font-weight:lighter;
+        text-align: justify;
+        
+    }
+    .card{
+
+       
+        margin: 20px;
+        padding:20px;
+        border: solid 2px black ;
+        border-radius: 30px;
+        
+    }
+    .copy{
+        text-align: center;
+        font-family: cursive;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+
+        
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+
+    <div class="logo">
+      <div class="square"></div>
+      <span>Hafsa Ahmed</span>
+    </div>
+    
+<div class="nav-links"> 
+    <a href="index.html">Home /</a>
+    <a href="project.html">Project /</a>
+    <a href="article.html">Articles /</a>
+    <a href="contact.html">Contact</a>
+    </div>
+    </nav>
+    
+<!--hero-->
+<section class="hero">
+    <h1>Frontend Developer</h1>
+    <p>html only with proper layout, no styling</p>
+</section>
+<!--content-->
+<section class="container">
+    <!--project-->
+    <div class="box">
+       <h2>project</h2>
+       <div class="project-item">HTML Only Portfolio</div>
+       <div class="project-item">Calculator</div>
+       <div class="project-item">Quiz App</div>
+       <div class="project-item">Countdown Timer</div>
+       <div class="project-item">Product Upcoming Page</div>
+
+    </div>
+
+    <!--work exprience-->
+    <div class="box">
+       <h2>Work Exprience</h2>
+       <div class="Work">
+       <h3>roadmap.sh</h3>
+       <p>Solved all the frontend project</p>
+       <a href="#">Visit my profile</a>
+    </div>
+
+    <div class="work">
+       <h3>OpenSource Work</h3>
+       <p>
+        Contributed to 50 opensource project.
+        Made my own projects with 200 GitHub Stars.
+       </p>
+       <a href="#">Visit my GitHub profile</a>
+    </div>
+    </div>
+
+    <!--Education-->
+    <div class="box-education">
+        <h2>Education</h2>
+        <p>
+            Graguated with 3.76 out of 4GPA.
+            won Acme Hackathon.
+            Organized 30 sessions.
+        </p>
+
+        <p>Courses I took:</p>
+        <ul>
+            <li>Object Oriented programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Engineering</li>
+            <li>Artificial Interaction</li>
+            <li>Human Computer Interaction</li>
+            <li>Computer Graphics</li>
+            <li>Database Management systems</li>
+            <li>Distributed Database system</li>
+            <li>Discrete Mathematics</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section >
+    <p class="qoral">Review from my Teachers</p>
+
+    <div class="review container2">
+
+      <div class="card">
+        <p class="text">John doe was a brilliant <br>
+            student;always stood out <br>
+            with his assignments</p>
+        <p class="shape">John Doe <br>
+            &nbsp;Assistant professor
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="text">John doe was a brilliant<br>
+             student;always stood out <br>
+             with his assignments</p>
+        <p class="shape">John Doe <br>
+           &nbsp; Assistant professor
+        </p>
+      </div>
+
+
+      <div class="card">
+        <p class="text">John doe was a brilliant <br>
+            student;always stood out <br>
+            with his assignments</p>
+        <p class="shape">John Doe <br>
+           &nbsp; Assistant professor
+        </p>
+    
+      </div>
+    </div>
+    </div>
+</section>
+<br><br><br>
+<br><br><br>
+
+
+<footer class="copy">
+    &copy;all rights reserved 2025
+</footer>
+<br><br><br>
+
+
+</body>
+</html>
+
+
+   
